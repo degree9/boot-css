@@ -1,5 +1,5 @@
 (set-env! :dependencies  '[[org.clojure/clojure "1.8.0"]
-                           [degree9/boot-npm    "1.7.0-SNAPSHOT"]
+                           [degree9/boot-npm    "1.10.0-SNAPSHOT"]
                            [degree9/boot-exec   "1.1.0-SNAPSHOT"]
                            [degree9/boot-semver "1.6.0" :scope "test"]]
           :resource-paths   #{"src"})

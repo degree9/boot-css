@@ -1,7 +1,6 @@
 (ns degree9.boot-css
   (:require [boot.core :as boot]
             [clojure.string :as s]
-            [degree9.boot-exec :as exec]
             [degree9.boot-npm :as npm]))
 
 (defn- fs-sync [tmp]
@@ -21,4 +20,4 @@
         args     [less out]]
     (comp
       (fs-sync tmp)
-      (exec/exec :module "less" :process "lessc" :directory tmp-path :arguments args :include true :exclude #{exclude}))))
+      (npm/exec :module "less" :process "lessc" :directory tmp-path :arguments args :include true :exclude #{exclude}))))
