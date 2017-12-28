@@ -20,4 +20,4 @@
         args     [less out]]
     (comp
       (fs-sync tmp)
-      (npm/exec :module "less" :process "lessc" :directory tmp-path :arguments args :include true :exclude #{exclude}))))
+      (npm/exec :module "less" :process "lessc" :arguments args :include true :exclude #{exclude}))))
